@@ -317,9 +317,9 @@
              as the atomic intrinsics will only emit cmpxchg8b
     */
 
-    // TRD : lfds710_pal_uint_t volatile (*destination)[2], lfds710_pal_uint_t (*compare)[2], lfds710_pal_uint_t (*new_destination)[2], enum lfds710_misc_cas_strength cas_strength, char unsigned result
+    // TRD : lfds711_pal_uint_t volatile (*destination)[2], lfds711_pal_uint_t (*compare)[2], lfds711_pal_uint_t (*new_destination)[2], enum lfds711_misc_cas_strength cas_strength, char unsigned result
 
-    #define LFDS710_PAL_ATOMIC_DWCAS( pointer_to_destination, pointer_to_compare, pointer_to_new_destination, cas_strength, result )                             \
+    #define LFDS711_PAL_ATOMIC_DWCAS( pointer_to_destination, pointer_to_compare, pointer_to_new_destination, cas_strength, result )                             \
     {                                                                                                                                                            \
       (result) = 0;                                                                                                                                              \
                                                                                                                                                                  \
